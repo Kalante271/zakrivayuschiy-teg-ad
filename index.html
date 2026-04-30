@@ -474,30 +474,23 @@
           </div>
         </article>
 
-        <button
-          class="save_button"
-          onclick="document.getElementById('dialog-id').showModal()"
-          aria-controls="dialog-id"
-          type="button"
-        >
+        <button class="save-button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id" type="button">
           <svg class="diskette" width="21" height="21" viewBox="0 0 39 39">
             <use href="#diskette" />
           </svg>
-          <span class="save_button__text">Сохранить на память</span>
+          <span class="save-button__text">Сохранить на память</span>
         </button>
 
-        <dialog id="dialog-id" class="dialog-id">
-          <svg class="diskette dialog_image">
-            <use href="#diskette" />
-          </svg>
-          <span class="save_button__text dialog_text">Вставьте дискету, чтобы продолжить</span>
-          <button
-            class="save_button dialog_button"
-            onclick="document.getElementById('dialog-id').close()"
-            type="button"
-          >
-            <span class="save_button__text">OK</span>
-          </button>
+        <dialog id="dialog-id" class="dialog">
+          <form method="dialog">
+            <svg class="diskette dialog__image">
+              <use href="#diskette" />
+            </svg>
+            <span class="save-button__text dialog__text"> Вставьте дискету, чтобы продолжить </span>
+            <button class="save-button dialog__button" type="submit">
+              <span class="save-button__text">OK</span>
+            </button>
+          </form>
         </dialog>
       </section>
     </main>
