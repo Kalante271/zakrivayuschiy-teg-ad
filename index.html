@@ -17,7 +17,7 @@
       <h1 class="header__title">закрывающий тег</h1>
     </header>
 
-    <main>
+    <main class="main">
       <section class="cards-container">
         <article class="card sprint_0">
           <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
@@ -474,7 +474,12 @@
           </div>
         </article>
 
-        <button class="save_button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id" type="button">
+        <button
+          class="save_button"
+          onclick="document.getElementById('dialog-id').showModal()"
+          aria-controls="dialog-id"
+          type="button"
+        >
           <svg class="diskette" width="21" height="21" viewBox="0 0 39 39">
             <use href="#diskette" />
           </svg>
@@ -486,7 +491,11 @@
             <use href="#diskette" />
           </svg>
           <span class="save_button__text dialog_text">Вставьте дискету, чтобы продолжить</span>
-          <button class="save_button dialog_button" onclick="window['dialog-id'].close()" type="button">
+          <button
+            class="save_button dialog_button"
+            onclick="document.getElementById('dialog-id').close()"
+            type="button"
+          >
             <span class="save_button__text">OK</span>
           </button>
         </dialog>
