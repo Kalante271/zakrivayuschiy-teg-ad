@@ -228,10 +228,6 @@
   height: 192px;
 }
 
-.dialog form {
-  display: contents;
-}
-
 .dialog[open] {
   display: grid;
   grid-template-columns: min-content minmax(min-content, 1fr);
