@@ -261,6 +261,9 @@
   font-family: Press Start 2P;
   line-height: 150%;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
 }
 
 .dialog__button {
@@ -273,12 +276,6 @@
   overflow: hidden;
   background: #fff;
   color: #fff;
-}
-
-.dialog__text {
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: difference;
 }
 
 dialog::backdrop {
